@@ -1,0 +1,67 @@
+* {
+    margin: 0;           /* Remove margens externas */
+    padding: 0;          /* Remove espaçamentos internos */
+    box-sizing: border-box; /* Garante que bordas e preenchimentos não aumentem o tamanho total do elemento */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte do texto */
+    background-color: #1a1a1a;        /* Cor de fundo escura (Rock style) */
+    color: #f4f4f4;                   /* Cor do texto clara para dar contraste */
+    line-height: 1.6;                 /* Melhora o espaçamento entre linhas de texto */
+}
+
+#cabecalho-principal {
+    background-color: #3e2723;   /* Tom de marrom café escuro */
+    display: flex;               /* Ativa o Flexbox para colocar logo e menu lado a lado */
+    justify-content: space-between; /* Empurra a logo para a esquerda e o menu para a direita */
+    align-items: center;         /* Centraliza os itens verticalmente no meio do cabeçalho */
+    padding: 20px 50px;          /* Espaço interno: 20px em cima/baixo e 50px nas laterais */
+    border-bottom: 3px solid #d32f2f; /* Uma linha vermelha fina para dar o toque Rock 'n Roll */
+}
+
+.logo h1 {
+    color: #ffca28;              /* Cor amarelada/dourada para destacar o nome */
+    text-transform: uppercase;    /* Deixa o texto todo em MAIÚSCULO */
+    letter-spacing: 2px;         /* Aumenta o espaço entre as letras */
+}
+
+.menu-navegacao ul {
+    display: flex;       /* 1. ATIVA O IMÃ: Faz os itens <li> ficarem um ao lado do outro */
+    
+    list-style: none;    /* Remove as bolinhas da lista */
+    
+    gap: 20px;           /* 2. ESPAÇAMENTO: Cria um espaço automático entre cada 
+                            item do menu sem precisar de margens manuais */
+}
+
+.menu-navegacao a {
+    color: #f4f4f4;              /* Cor branca para os links */
+    text-decoration: none;       /* Remove o sublinhado padrão dos links */
+    margin-left: 20px;           /* Dá um espaço entre um link e outro */
+    font-weight: bold;           /* Deixa o texto em negrito */
+    transition: 0.3s;            /* Faz com que qualquer mudança (como o hover) seja suave */
+}
+
+.menu-navegacao a:hover {
+    color: #d32f2f;              /* Muda para vermelho quando você passa o mouse por cima */
+}
+
+.banner {
+    text-align: center;          /* Centraliza o texto */
+    padding: 60px 20px;          /* Grande espaçamento para dar destaque */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com');
+    background-size: cover;      /* A imagem de fundo cobre todo o espaço disponível */
+    color: white;
+}
+
+.banner h2 {
+    font-size: 3rem;             /* Texto bem grande para o Bem-vindo */
+    margin-bottom: 10px;         /* Espaço abaixo do título */
+}
+
+.foto-loja{
+
+   max-width: 50%;
+   height: auto;
+}

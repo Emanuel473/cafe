@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- UTILIDADE: Garante que recursos modernos funcionem e o site não abra em "modo de compatibilidade" antigo. -->
+<html lang="pt-br"> <!-- UTILIDADE: Ajuda o Google a mostrar seu site para brasileiros e permite que leitores de tela usem a pronúncia correta. -->
+<head>
+    <meta charset="UTF-8"> <!-- permite usar ç,~ e outros acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe com Você</title>
+    <link rel = "stylesheet" href = "style.css"> <!--html conecta ao css-->
+</head>
+<body>
+    <header id = "cabecalho-principal"> 
+        <div class = "logo">
+            <h1> Cafe com Você</h1>
+        </div>
+        <nav class = "menu-navegacao">  <!-- POR QUÊ: Tag semântica para navegação. -->
+            <ul>
+                <li>
+                    <a href = "index.html"> Inicio</a>
+                </li>
+                <li>
+                    <a href = "sobre.html"> Sobre </a>
+                </li>
+                <li>
+                    <a href = "receitas.html"> Receitas com Café </a>
+                </li>
+                <li>
+                    <a href = "horadoCafe.html"> Hora do Café  </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main id = "conteudo-site">
+        <section class = "banner">
+            <h2> Bem Vindo</h2>
+            <p> Que tal tomar um café comigo e falarmos sobre rock ?? Tenho certeza que irá amar!</p>
+        </section>
+
+        <section claa = "pegue-o-cafe">
+            <h2> Pegue seu café !</h2>
+            <div class = "produto" >
+                <h2> Café Preto </h2>
+                <img src = "https://img.freepik.com/fotos-gratis/xicara-de-cafe-deliciosa-de-qualidade_23-2150691273.jpg" alt = "xicara-de-cafe-preto" class ="foto-do-cafe"> 
+                <p> R$ 8,80 </p>
+                <button class = "btn-pedir"> Pedir </button>
+            </div>
+
+             <div class = "produto" >
+                <h2> Cappuccino </h2>
+                <img src = "https://www.allrecipes.com/thmb/chsZz0jqIHWYz39ViZR-9k_BkkE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8624835-how-to-make-a-cappuccino-beauty-4x3-0301-13d55eaad60b42058f24369c292d4ccb.jpg" alt = "xicara-de-cappuccino" class ="foto-do-cappuccino"> 
+                <p> R$ 10,90 </p>
+                <button class = "btn-pedir"> Pedir </button>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+</body>
+</html>
